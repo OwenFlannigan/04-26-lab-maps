@@ -50,11 +50,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(fountain));
 
         PolylineOptions polyline = new PolylineOptions()
-                .add(new LatLng(47.655, -122.3078),
-                        new LatLng(47.654, -122.3088),
-                        new LatLng(47.655, -122.3098),
-                        new LatLng(47.654, -122.3108),
-                        new LatLng(47.655, -122.3118));
+                .color(R.color.purple)
+                .width(30)
+                .add(new LatLng(47.6540, -122.3074),
+                        new LatLng(47.6537, -122.3076),
+                        new LatLng(47.6540, -122.3078),
+                        new LatLng(47.6537, -122.3080),
+                        new LatLng(47.6540, -122.3082));
 
         mMap.addPolyline(polyline);
     }
